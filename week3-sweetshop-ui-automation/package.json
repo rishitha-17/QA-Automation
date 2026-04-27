@@ -1,0 +1,25 @@
+{
+  "name": "sweetshop-ui-automation",
+  "version": "1.0.0",
+  "description": "Playwright UI automation suite for Sweet Shop demo application",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:chromium": "playwright test --project=chromium",
+    "test:firefox": "playwright test --project=firefox",
+    "test:webkit": "playwright test --project=webkit",
+    "test:sweets": "playwright test tests/sweets-page.spec.ts",
+    "test:basket": "playwright test tests/basket.spec.ts",
+    "test:checkout": "playwright test tests/checkout.spec.ts",
+    "test:login": "playwright test tests/login.spec.ts",
+    "test:navigation": "playwright test tests/navigation.spec.ts",
+    "test:smoke": "playwright test --grep @smoke",
+    "test:regression": "playwright test --grep @regression",
+    "report": "playwright show-report",
+    "codegen": "playwright codegen https://sweetshop.netlify.app"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.44.0",
+    "typescript": "^5.4.0"
+  }
+}

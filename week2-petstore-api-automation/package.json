@@ -1,0 +1,16 @@
+{
+  "name": "petstore-api-automation",
+  "version": "1.0.0",
+  "description": "API automation tests for https://petstore.swagger.io using Playwright",
+  "scripts": {
+    "test": "playwright test",
+    "test:pet": "playwright test tests/pet.spec.ts",
+    "test:store": "playwright test tests/store.spec.ts",
+    "test:user": "playwright test tests/user.spec.ts",
+    "report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.44.0",
+    "@types/node": "^20.0.0"
+  }
+}
